@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodboard Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="container">
+    <h1>Aesthetic Moodboard Generator</h1>
+</div>
+
+<span id="intro-text"></span>
+
+<!-- HOMEPAGE STUFF -->
+<section id="home-page">
+    
+    <div class="carousel-section">
+      <div class="carousels">
+        <img src="assets/images/vibe1.jpeg" alt="vibe 1" />
+        <img src="assets/images/vibe2.jpeg" alt="vibe 2" />
+        <img src="assets/images/vibe3.jpeg" alt="vibe 3" />
+        <img src="assets/images/vibe4.webp" alt="vibe 4" />
+        <img src="assets/images/vibe5.jpeg" alt="vibe 5" />
+        <img src="assets/images/vibe6.webp" alt="vibe 6" />
+        <img src="assets/images/vibe8.jpeg" alt="vibe 7" />
+        <img src="assets/images/vibe7.webp" alt="vibe 8" />
+      </div>
+    </div>
+
+    <div class="selector">
+        <label for="vibeSelect">Choose your vibe</label>
+        <select id="vibeSelect">
+            <option value="softgirl">Soft Girl</option>
+            <option value="darkacademia">Dark Academia</option>
+            <option value="y2k">Y2k</option>
+        </select>
+        <button id="loadBtn">Load Moodboard</button>
+        <button id="musicBtn">Stop Music</button>
+    </div>
+  </section>
+  
+
+  <section id="moodboard-page" style="display: none;">
+    <button id="saveMoodboardBtn">📥 Save Moodboard</button>
+    <h2>Moodboard Time</h2>
+    <div id="moodboard" class="carousel"></div>
+  </section>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+<p id="quote"></p>
+
+<label for="colorPicker">🎨 Pick Your Vibe Color:</label>
+<input type="color" id="colorPicker" value="#ff69b4" />
+
+<div id="quiz">
+  <p>Pick a vibe:</p>
+  <button onclick="setMood('soft')">Soft Girl ☁️</button>
+  <button onclick="setMood('grunge')">Grunge 🖤</button>
+  <button onclick="setMood('baddie')">Baddie 💅</button>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

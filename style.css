@@ -1,0 +1,154 @@
+body{
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.6s ease, color 0.6s ease;
+}
+
+.container{
+    max-width: 800px;
+    margin: auto;
+}
+
+.selector{
+    margin-bottom: 20px;
+}
+
+.carousel{
+    display: flex;
+    overflow-x: auto;
+    gap: 10px ;
+    scroll-behavior: smooth;
+    padding: 10px;
+  width: fit-content;
+}
+
+.carousel img{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .carousel img {
+        height: 150px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+
+.carousel-section {
+    overflow: hidden;
+    width: 100%;
+    background: linear-gradient(to right, white, rgb(121, 166, 202));
+    padding: 2rem 0;
+    margin-top: 2rem;
+  }
+  
+.carousels {
+    display: flex;
+    gap: 1rem;
+    animation: scroll 30s linear infinite;
+    width: fit-content;
+  }
+  
+  .carousels img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .carousels img:hover {
+    transform: scale(1.05);
+  }
+
+  .carousels {
+    display: flex;
+    gap: 1rem;
+    animation: scroll 30s linear infinite;
+    width: fit-content;
+  }
+  
+  .carousels img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .carousels img:hover {
+    transform: scale(1.05);
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+#moodboard-page {
+  transition: opacity 0.8s ease-in-out;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+#moodboard{
+  margin-top: 20px;
+}
+#moodboard img{
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex: 0 0 auto;
+}
+#moodboard {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 1rem;
+  padding: 10px;
+  white-space: nowrap;
+}
+#moodboard::-webkit-scrollbar {
+  display: none;
+}
+
+#moodboard {
+  display: flex;
+  animation: scrollMoodboard 40s linear infinite;
+  width: max-content;
+}
+
+@keyframes scrollMoodboard {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+:root {
+  --accent-color: #ff69b4;
+}
+
+h1, button, .carousel-section {
+  color: var(--accent-color);
+}
+
